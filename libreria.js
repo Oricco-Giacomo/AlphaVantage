@@ -1,9 +1,10 @@
 "use strict";
 
 class Ajax {
-  // Properties
-  _URL = "http://localhost:3000";
 
+  constructor(baseUrl){
+    this._URL = baseUrl || "http://localhost:3000";
+  }
   // Methods
   // mtehod può essere GET oppure POST
   // url = rappresenta la risorsa da richiedere al server (es /api)

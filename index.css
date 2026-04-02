@@ -1,0 +1,40 @@
+/* Ensure the map fills its responsive container */
+#mapContainer {
+    width: 100% !important;
+    height: 400px !important;
+    margin: 0;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+}
+
+/* Allow Chart.js to scale properly */
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 100%;
+}
+
+/* Fix for MapLibre pointer events if needed, 
+   but usually we want events enabled for scrolling */
+.maplibregl-canvas {
+    pointer-events: auto !important;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Custom styling for the business info block */
+#businessData h2 {
+    font-size: 1.25rem;
+    color: #0d6efd;
+}
+
+#businessData p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
